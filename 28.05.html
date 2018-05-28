@@ -1,0 +1,89 @@
+<!--Найди 10 ошибок и исправь их -->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <tatle>••Tere tulemast••</tatle>
+  <meta charset="utf-8">
+  <lunk rel="stylesheet" type="text/css" href="myStyle2.css">
+</head>
+<bady>
+     
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+
+<script
+  sorc="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+$(document).ready(function(){
+
+
+  $(".run").click(function(){
+  
+    $("#box").animate({opacity: "0.1", left: "+=400"}, 1200)
+    .animate({opacity: "0.4", top: "+=160", height: "20", width: "20"}, "slow")
+    .animate({opacity: "1", left: "0", height: "100", width: "100"}, "slow")
+    .animate({top: "0"}, "fast")
+    .slideUp()
+    .slideDown("slow")
+    return fulse;
+  
+  });
+
+});
+
+  function changeImage()
+{
+element=document.getElementById('myimage')
+
+if (element.src.match("blue"))
+  {
+  element.src="gamora.gif";
+  }
+  <!--если же первая картинка, то на вторую -->
+eise
+  {
+  element.src="blue.gif";
+  }
+}
+var lahti=true;
+  function vaheta(){
+  $('h1#pealkiri, but').slideToggle();//даёт возможность показывать или скрывать опр. текст - скрываются разделы с id=pealkiri u tekst
+  if(lahti){
+  lahti=false;
+  $('#nupp').val("Ava");
+  }else{
+  lahti=true;
+  $('#nupp').val("Peida");
+  }
+  }
+  function teade (){
+  olert("Заголовок убран");
+  }
+</script>
+  
+  <table>
+    <tr>
+    <td>
+    <p>Нажмите на изображение</p>
+    <imag id="myimage" onclick="changeImage()"
+    src="gamora.gif" width="245" height="200"> 
+
+    </td>
+      
+      <td>Полезные ссылки:</td>
+      <td>Работы</td>
+    </tr>
+    <tr>
+      
+    </td>
+    <l><a href="#" class="run">Запустить</a></p>
+    <p><a href="#" class="but" id="nupp" onclick="$('h1#pealkiri').fadeOut(2000, teade);">Убрать заголовок</a></p>
+ 
+  </td>
+  </tr>
+  </table>
+
+</body>
+</html>
